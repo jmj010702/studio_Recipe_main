@@ -747,28 +747,50 @@ FRONT_URL
 
 ### A. 프로젝트 구조
 studio-recipe/
-├── recipe/                    # Backend (Spring Boot)
+
+├── recipe/       # Backend (Spring Boot)
+
 │   ├── src/main/
+
 │   │   ├── java/com/recipe/
+
 │   │   │   ├── algorithm/     # 추천 알고리즘
+
 │   │   │   ├── config/        # 설정 (Security, JWT, Batch)
+
 │   │   │   ├── controller/    # REST API
+
 │   │   │   ├── domain/        # Entity, DTO
+
 │   │   │   ├── repository/    # JPA Repository
+
 │   │   │   └── service/       # 비즈니스 로직
+
 │   │   └── resources/
+
 │   │       ├── application-*.yml
+
 │   │       └── data/          # CSV 데이터
+
 │   ├── Dockerfile
+
 │   └── docker-compose.yml
+
 │
 └── recommended-recipe/        # Frontend (React + Vite)
+
 ├── src/
+
 │   ├── api/               # Axios 설정
+
 │   ├── components/        # React 컴포넌트
+
 │   ├── page/              # 페이지 컴포넌트
+
 │   └── main.jsx
+
 └── vite.config.js
+
 
 ### B. 주요 API 엔드포인트
 
